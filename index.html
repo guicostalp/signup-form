@@ -18,7 +18,7 @@
             <h1>The Odin Project</h1>
         </div>
 
-        <p>Photo by Sebastian Staines on Unsplash</p>
+        <p>Photo by Henri Picot on Unsplash</p>
 
 
 
@@ -56,8 +56,8 @@
                 </label>
                 <label for="password">
                     PASSWORD
-                    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"                    
-                      required type="password" name="password"
+                    <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"                    
+                      type="password" name="password"
                       placeholder="Insert password" id="password" 
                       title="Must contain at least one  number and one uppercase
                              and lowercase letter, and at least 8 or more 
@@ -66,7 +66,8 @@
                 </label>
                 <label for="confirm-password">
                     CONFIRM PASSWORD
-                    <input required type="password" name="confirm-password"
+                    <input required patern=".password"
+                           type="password" name="confirm-password"
                            placeholder="Confirm Password" id="confirm-password">
                     <div id="confirm-password-error" class="error"></div>
                 </label>
