@@ -1,3 +1,77 @@
-h1 {
-    border: 2px solid black;
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+.banner h1 {
+
+    font-family: customFont;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+.left-container {
+
+    flex-grow: 1;
+    position: relative;
+    width: 60vw;
+    min-width: 345px;
+    height: 100vh;
+    background: url(./images/left-img.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.banner {
+
+    width: 100%;
+    background: rgba(0,0,0,.527);    
+    line-height: 2rem;
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.banner img {
+    width: 5rem;
+    padding: 10px;
+}
+
+.left-container p {
+
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 12px;
+
+
+}
+
+
+.right-container {
+
+    padding: 50px;
+
+
+}
+
+.mid-text, .head-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
