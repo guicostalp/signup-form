@@ -8,6 +8,15 @@
     src: url(./fonts/Kiona-Regular.ttf);
 }
 
+body {
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 .banner h1 {
 
     font-family: customFont;
@@ -19,7 +28,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    overflow-x: hidden;
+
 
 }
 
@@ -62,8 +71,9 @@
     position: absolute;
     bottom: 0px;
     right: 5px;
-    color: rgba(255, 255, 255, 0.555);
+    color: rgba(255, 255, 255, .7);
     font-size: 12px;
+    font-family: textFont;
 
 
 }
@@ -126,6 +136,20 @@ input {
     margin-top: 3px;
   }
 
+input:focus:invalid {
+    border-color: red;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.16);
+
+}
+
+input:focus {
+
+    border: 1px solid rgb(75, 73, 173);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.16);
+    outline: none;
+
+}
+
 .login-container {
 
     padding: 2vw 2vw;
@@ -141,7 +165,7 @@ input {
     border-radius: 10px;
     color: white;
     letter-spacing: -1px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
 }
 .submit-button:hover {
@@ -149,6 +173,8 @@ input {
     background-color: rgb(54, 52, 146);
 
 }
+
+
 
 @media screen and (max-width: 850px) {
 
@@ -178,7 +204,5 @@ input {
         justify-content: center;
 
     }
-
-
 
 }
