@@ -151,10 +151,12 @@ input:focus {
 }
 
 .error {
-    font-family: customFontBold;
-    font-size: .85rem;
-    color: rgb(255, 69, 100, 0.8);
+    font-family: textFont;
+    font-size: .75rem;
+    color: rgb(255, 69, 100, 0.85);
     position: absolute;
+    margin-top: 5px;
+
 }
 
 .login-container {
