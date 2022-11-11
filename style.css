@@ -14,7 +14,7 @@
 
 }
 
-body {
+.main-container {
 
     display: flex;
     justify-content: center;
@@ -147,5 +147,38 @@ input {
 .submit-button:hover {
 
     background-color: rgb(54, 52, 146);
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-container {
+
+        width: 100vw;
+        height: 20rem;
+
+    }
+
+    .header, .form-container, .login-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .right-container, form, .login-container {
+
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+
 
 }
